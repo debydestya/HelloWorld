@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<br/>
+No Account yet? @Html.ActionLink("SignUp Now!","SignUp","Account")
+
+@{ 
+    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Hi <b> @Context.User.Identity.Name</b>! Welcome to my first MVC 5 Web App! </h2>
+
